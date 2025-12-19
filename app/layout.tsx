@@ -20,6 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* add an explicit empty favicon so browsers don't fetch Vercel's default */}
+      <head>
+        <link rel="icon" href="data:," />
+      </head>
       <body className={`font-sans antialiased`}>
         {children}
       </body>
